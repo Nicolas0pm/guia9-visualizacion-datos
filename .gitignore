@@ -1,0 +1,8 @@
+.venv/
+.venv-build/
+__pycache__/
+build/
+dist/
+datos/
+*.spec
+entrega/**/*.exe

@@ -1,0 +1,14 @@
+VISUALIZADOR DE ENCUESTAS (aplicación portable) — Guía 9, Business Analytics
+
+1. Copie la carpeta a cualquier lugar (USB, escritorio, descargas) y abra VisualizadorEncuestas.exe.
+   No requiere instalación, ni Python, ni internet.
+2. La primera vez se crea la carpeta "datos" junto al .exe con el archivo encuesta.db, que trae los
+   datos de la guía (100 estudiantes). Si copia la carpeta completa, los datos viajan con ella.
+3. Escriba la actividad y el número de estudiantes y pulse Agregar. El gráfico se actualiza solo.
+4. Para corregir, seleccione la fila en la tabla, cambie el dato y pulse Actualizar.
+5. Archivo > Importar CSV permite cargar datos (ver encuesta_ejemplo.csv). Archivo > Exportar guarda
+   los datos en CSV o el gráfico en PNG. Archivo > Restaurar vuelve a los datos de la guía.
+
+Windows SmartScreen puede advertir porque el .exe no está firmado:
+"Más información" > "Ejecutar de todas formas".
+La primera apertura tarda unos segundos porque el programa se descomprime en una carpeta temporal.
