@@ -17,6 +17,7 @@ CAPT = RAIZ / "docs" / "capturas"
 ENTREGA = RAIZ / "entrega"
 AZUL = RGBColor(0x1F, 0x4E, 0x79)
 FECHA = "24 de octubre de 2026"
+REPO = "https://github.com/Nicolas0pm/guia9-visualizacion-datos"
 
 
 # ---------- utilidades de formato ----------
@@ -158,6 +159,7 @@ def portada(d, titulo, subtitulo):
     d.add_paragraph()
     parrafo(d, "Docente: ______________________________", alinear=WD_ALIGN_PARAGRAPH.CENTER)
     parrafo(d, f"Sesión 11 · Semana 11 · {FECHA}", alinear=WD_ALIGN_PARAGRAPH.CENTER)
+    parrafo(d, f"Repositorio: {REPO}", alinear=WD_ALIGN_PARAGRAPH.CENTER, tam=10)
     d.add_paragraph().add_run().add_break(WD_BREAK.PAGE)
 
 
@@ -292,6 +294,7 @@ def fase1():
     parrafo(d, "Escobar Mercado, M., Fernández Macías, E. y Bernardi, F. (2021). Análisis de datos con Stata (3.ª ed.). "
                "CIS — Centro de Investigaciones Sociológicas.")
     parrafo(d, "Universidad — Guía de laboratorio N.º 9: Business Analytics e Inteligencia Artificial (2026).")
+    parrafo(d, f"Repositorio del proyecto (gráficas, datos y software de la FASE 2): {REPO}")
     d.save(ENTREGA / "Fase1_Interpretacion_de_datos.docx")
 
 
@@ -318,6 +321,7 @@ def fase2():
         ["Empaquetado", "PyInstaller 6.16 en modo --onefile --windowed"],
         ["Sistema operativo", "Windows 10/11 de 64 bits (el código fuente también corre en Linux y macOS)"],
         ["Pruebas", "23 pruebas automáticas con unittest + prueba de la interfaz con capturas"],
+        ["Código fuente", REPO],
     ], [5, 11])
 
     d.add_heading("2. Requisitos", 1)
@@ -475,7 +479,8 @@ def fase2():
     parrafo(d, "pyinstaller --noconfirm --onefile --windowed --name VisualizadorEncuestas --paths app app\\main.py",
             cursiva=True, alinear=WD_ALIGN_PARAGRAPH.LEFT)
     parrafo(d, "Alternativamente, el workflow de GitHub Actions construye el .exe en cada push y lo publica como "
-               "artefacto descargable.")
+               "artefacto descargable en la pestaña Actions del repositorio.")
+    parrafo(d, f"**Código fuente y documentación:** {REPO}", alinear=WD_ALIGN_PARAGRAPH.LEFT)
 
     d.add_heading("11. Pruebas y resultados", 1)
     parrafo(d, "**¿Cómo se comprobó la ejecución en diferentes entornos?** El código se probó en Linux (Python 3.14) y "
