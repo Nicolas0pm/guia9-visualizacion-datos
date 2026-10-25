@@ -1,6 +1,25 @@
 # Visualizador de Encuestas — Guía 9 (Business Analytics e IA)
 
-Repositorio: https://github.com/Nicolas0pm/guia9-visualizacion-datos — **Descargar la app:** [VisualizadorEncuestas.zip](https://github.com/Nicolas0pm/guia9-visualizacion-datos/releases/download/v1.0/VisualizadorEncuestas.zip)
+## ⬇️ Descargar la aplicación
+
+La aplicación está en la raíz de este repositorio, en dos formas:
+
+| Archivo | Qué es |
+|---|---|
+| [`VisualizadorEncuestas.zip`](VisualizadorEncuestas.zip) | **Recomendado.** El programa con el LEEME y un CSV de ejemplo |
+| [`VisualizadorEncuestas.exe`](VisualizadorEncuestas.exe) | Solo el programa |
+
+**Cómo descargar el ZIP:**
+
+1. Haga clic en **`VisualizadorEncuestas.zip`** en la lista de archivos de arriba (o en el enlace de la tabla).
+2. En la página que se abre, pulse el botón **Download raw file** (ícono de descarga ⬇ a la derecha), o use el
+   enlace directo: https://github.com/Nicolas0pm/guia9-visualizacion-datos/raw/main/VisualizadorEncuestas.zip
+3. Descomprima el ZIP (clic derecho → *Extraer todo…*) y abra **`VisualizadorEncuestas.exe`**.
+
+No requiere instalación, ni Python, ni internet (Windows 10/11 de 64 bits). Si Windows SmartScreen advierte porque el
+programa no está firmado: *Más información* → *Ejecutar de todas formas*. La primera apertura tarda unos segundos.
+
+También está en la sección **Releases**: https://github.com/Nicolas0pm/guia9-visualizacion-datos/releases/tag/v1.0
 
 Aplicación de escritorio **portable** (no web) para ingresar los datos de una encuesta, validarlos, guardarlos en
 SQLite y generar gráficos e indicadores de forma automática. Trae cargada la encuesta de la FASE 1 (100 estudiantes,
