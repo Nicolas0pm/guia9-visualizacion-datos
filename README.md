@@ -1,6 +1,6 @@
 # Visualizador de Encuestas — Guía 9 (Business Analytics e IA)
 
-Repositorio: https://github.com/Nicolas0pm/guia9-visualizacion-datos
+Repositorio: https://github.com/Nicolas0pm/guia9-visualizacion-datos — **Descargar la app:** [VisualizadorEncuestas.zip](https://github.com/Nicolas0pm/guia9-visualizacion-datos/releases/download/v1.0/VisualizadorEncuestas.zip)
 
 Aplicación de escritorio **portable** (no web) para ingresar los datos de una encuesta, validarlos, guardarlos en
 SQLite y generar gráficos e indicadores de forma automática. Trae cargada la encuesta de la FASE 1 (100 estudiantes,

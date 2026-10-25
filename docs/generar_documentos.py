@@ -18,6 +18,7 @@ ENTREGA = RAIZ / "entrega"
 AZUL = RGBColor(0x1F, 0x4E, 0x79)
 FECHA = "24 de octubre de 2026"
 REPO = "https://github.com/Nicolas0pm/guia9-visualizacion-datos"
+DESCARGA = REPO + "/releases/download/v1.0/VisualizadorEncuestas.zip"
 
 
 # ---------- utilidades de formato ----------
@@ -160,6 +161,8 @@ def portada(d, titulo, subtitulo):
     parrafo(d, "Docente: ______________________________", alinear=WD_ALIGN_PARAGRAPH.CENTER)
     parrafo(d, f"Sesión 11 · Semana 11 · {FECHA}", alinear=WD_ALIGN_PARAGRAPH.CENTER)
     parrafo(d, f"Repositorio: {REPO}", alinear=WD_ALIGN_PARAGRAPH.CENTER, tam=10)
+    if titulo.startswith("FASE 2"):
+        parrafo(d, f"Descarga del software portable: {DESCARGA}", alinear=WD_ALIGN_PARAGRAPH.CENTER, tam=10)
     d.add_paragraph().add_run().add_break(WD_BREAK.PAGE)
 
 
@@ -322,6 +325,7 @@ def fase2():
         ["Sistema operativo", "Windows 10/11 de 64 bits (el código fuente también corre en Linux y macOS)"],
         ["Pruebas", "23 pruebas automáticas con unittest + prueba de la interfaz con capturas"],
         ["Código fuente", REPO],
+        ["Descarga (.zip)", DESCARGA],
     ], [5, 11])
 
     d.add_heading("2. Requisitos", 1)
@@ -481,6 +485,8 @@ def fase2():
     parrafo(d, "Alternativamente, el workflow de GitHub Actions construye el .exe en cada push y lo publica como "
                "artefacto descargable en la pestaña Actions del repositorio.")
     parrafo(d, f"**Código fuente y documentación:** {REPO}", alinear=WD_ALIGN_PARAGRAPH.LEFT)
+    parrafo(d, f"**Descarga del programa (versión 1.0):** {DESCARGA}. Se descarga el .zip, se descomprime y se "
+               "abre VisualizadorEncuestas.exe.", alinear=WD_ALIGN_PARAGRAPH.LEFT)
 
     d.add_heading("11. Pruebas y resultados", 1)
     parrafo(d, "**¿Cómo se comprobó la ejecución en diferentes entornos?** El código se probó en Linux (Python 3.14) y "

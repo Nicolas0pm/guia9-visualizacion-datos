@@ -6,3 +6,4 @@ dist/
 datos/
 *.spec
 entrega/**/*.exe
+entrega/*.zip
